@@ -3,136 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delicioso Coffee</title>
+    <title>Brew Haven Café | Artisan Coffee & Cozy Vibes</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="sidebar">
-        <div class="contact-info">
-            <a href="https://instagram.com/w_a_ale.96" target="_blank">
-                <i class="fab fa-instagram"></i> @w_a_ale.96
-            </a>
-            <a href="mailto:amayalajandra@gmail.com">
-                <i class="fas fa-envelope"></i> amayalajandra@gmail.com
-            </a>
-        </div>
-    </div>
-
-    <header>
-        <div class="container">
-            <h1>Delicioso Coffee</h1>
-            <p class="tagline">delicioso coffee for you</p>
-        </div>
-    </header>
-
+    <!-- Navigation -->
     <nav>
         <div class="container">
+            <h1 class="logo">Brew Haven</h1>
             <ul>
                 <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#location">Location</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#book-nook">Book Nook</a></li>
+                <li><a href="#contact">Visit Us</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h2>Artisan Coffee & Handcrafted Treats</h2>
+            <h2>Slow Down. Sip Well.</h2>
+            <p>Specialty coffee, homemade pastries & a cozy escape.</p>
+            <a href="#menu" class="btn">Explore Our Menu</a>
         </div>
     </section>
 
+    <!-- Menu -->
     <section id="menu" class="menu">
         <div class="container">
-            <h2>Our Menu</h2>
-            
-            <div class="menu-category">
-                <h3>Coffee Specialties</h3>
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <h4>Espresso</h4>
-                        <p>Rich and bold</p>
-                        <span class="price">$3.50</span>
+            <h2>Our Favorites</h2>
+            <div class="menu-grid">
+                <!-- Coffee -->
+                <div class="menu-category">
+                    <h3><i class="fas fa-mug-hot"></i> Coffee</h3>
+                    <div class="item">
+                        <h4>Honey Lavender Latte</h4>
+                        <p>Espresso, steamed milk, lavender syrup & honey drizzle</p>
+                        <span>$5.75</span>
                     </div>
-                    <div class="menu-item">
-                        <h4>Cappuccino</h4>
-                        <p>Perfectly balanced</p>
-                        <span class="price">$4.50</span>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Latte</h4>
-                        <p>Smooth and creamy</p>
-                        <span class="price">$4.75</span>
+                    <div class="item">
+                        <h4>Spiced Mocha</h4>
+                        <p>Dark chocolate, espresso, cinnamon & cayenne</p>
+                        <span>$6.00</span>
                     </div>
                 </div>
-            </div>
 
-            <div class="menu-category">
-                <h3>Desserts</h3>
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <h4>Chocolate Cake</h4>
-                        <p>Decadent and rich</p>
-                        <span class="price">$5.50</span>
+                <!-- Pastries -->
+                <div class="menu-category">
+                    <h3><i class="fas fa-croissant"></i> Pastries</h3>
+                    <div class="item">
+                        <h4>Cardamom Bun</h4>
+                        <p>Swirled with brown sugar & Nordic spices</p>
+                        <span>$4.50</span>
                     </div>
-                    <div class="menu-item">
-                        <h4>Tiramisu</h4>
-                        <p>Classic Italian</p>
-                        <span class="price">$6.00</span>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Cheesecake</h4>
-                        <p>New York style</p>
-                        <span class="price">$5.75</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu-category">
-                <h3>Snacks</h3>
-                <div class="menu-items">
-                    <div class="menu-item">
-                        <h4>Croissant</h4>
-                        <p>Buttery and flaky</p>
-                        <span class="price">$3.25</span>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Blueberry Muffin</h4>
-                        <p>Fresh and fruity</p>
-                        <span class="price">$3.50</span>
-                    </div>
-                    <div class="menu-item">
-                        <h4>Almond Scone</h4>
-                        <p>Crumbly and sweet</p>
-                        <span class="price">$3.75</span>
+                    <div class="item">
+                        <h4>Matcha Almond Croissant</h4>
+                        <p>Flaky, filled with matcha pastry cream</p>
+                        <span>$5.25</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about">
+    <!-- Book Nook -->
+    <section id="book-nook" class="book-nook">
         <div class="container">
-            <h2>Our Story</h2>
-            <p>Delicioso Coffee was born from a passion for creating perfect moments. We combine premium coffee beans with homemade desserts to deliver an unforgettable experience.</p>
+            <h2>The Book Nook</h2>
+            <p>Borrow from our curated library or bring your own. Pair your read with our <strong>Reader's Special</strong>: any drink + pastry for $8.</p>
         </div>
     </section>
 
-    <section id="location" class="location">
+    <!-- Footer -->
+    <footer id="contact">
         <div class="container">
-            <h2>Visit Us</h2>
-            <div class="hours">
-                <h3>Opening Hours</h3>
-                <p>Monday-Friday: 7am-7pm</p>
-                <p>Saturday-Sunday: 8am-6pm</p>
+            <div class="footer-grid">
+                <div>
+                    <h3>Visit</h3>
+                    <p>123 Cozy Lane<br>Seattle, WA</p>
+                </div>
+                <div>
+                    <h3>Hours</h3>
+                    <p>Mon-Fri: 7am–7pm<br>Sat-Sun: 8am–6pm</p>
+                </div>
+                <div class="social">
+                    <h3>Follow</h3>
+                    <a href="#"><i class="fab fa-instagram"></i> @brewhaven</a>
+                    <a href="#"><i class="fab fa-tiktok"></i> @brewhaven</a>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Delicioso Coffee. All rights reserved.</p>
+            <p class="copyright">&copy; 2023 Brew Haven Café. Made with <i class="fas fa-heart"></i> and caffeine.</p>
         </div>
     </footer>
 </body>
