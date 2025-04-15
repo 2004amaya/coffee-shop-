@@ -1,160 +1,69 @@
-/* Base Styles */
-:root {
-    --teal: #00FFFF;
-    --sky: #96C2DB;
-    --light: #E5EDF1;
-    --tan: #BFA181;
-    --white: #FFFFFF;
-    --cream: #EAE7DD;
-}
-
 body {
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background: var(--cream);
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #3e3e3e;
+  background: #fdfaf6;
 }
 
-.container {
-    width: 85%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 0;
-}
-
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-}
-
-/* Navigation */
-nav {
-    background: var(--white);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: fixed;
-    width: 100%;
-}
-
-nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-}
-
-.logo {
-    color: var(--tan);
-    font-size: 1.8rem;
-    margin: 0;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 1.5rem;
-}
-
-nav a {
-    color: var(--tan);
-    font-weight: 600;
-}
-
-/* Hero */
 .hero {
-    background: var(--tan);
-    color: var(--white);
-    text-align: center;
-    padding: 8rem 0 4rem;
-    margin-top: 60px;
+  background: url('images/coffee-hero.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  text-align: center;
 }
 
-.hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
 }
 
 .btn {
-    background: var(--teal);
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 25px;
-    display: inline-block;
-    margin-top: 1rem;
-    font-weight: 600;
+  margin-top: 1.5rem;
+  background: #6f4e37;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
-/* Menu */
-.menu {
-    background: var(--white);
+.btn:hover {
+  background: #5a3e2e;
 }
 
-.menu h2 {
-    text-align: center;
-    color: var(--tan);
+section {
+  padding: 3rem 2rem;
+  max-width: 700px;
+  margin: auto;
 }
 
-.menu-category {
-    margin: 2rem 0;
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.menu-category h3 {
-    color: var(--sky);
-    border-bottom: 2px dashed var(--light);
-    padding-bottom: 0.5rem;
+.menu ul {
+  list-style: none;
+  padding: 0;
 }
 
-.item {
-    margin: 1.5rem 0;
+.menu li {
+  margin-bottom: 0.5rem;
 }
 
-.item h4 {
-    margin: 0;
-    font-size: 1.2rem;
-}
-
-.item p {
-    margin: 0.3rem 0;
-    color: #666;
-}
-
-.item span {
-    font-weight: 600;
-    color: var(--tan);
-}
-
-/* Contact */
-.contact {
-    background: var(--light);
-}
-
-.contact-info {
-    display: flex;
-    gap: 3rem;
-    flex-wrap: wrap;
-}
-
-.contact a {
-    display: block;
-    color: #333;
-    margin: 0.5rem 0;
-}
-
-/* Footer */
 footer {
-    background: var(--tan);
-    color: var(--white);
-    text-align: center;
-    padding: 1rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .contact-info {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    nav ul {
-        display: none; /* Add mobile menu toggle here */
-    }
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #888;
 }
