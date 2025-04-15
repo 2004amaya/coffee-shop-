@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweet Brew Café</title>
+    <title>Delicioso Coffee</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="sidebar">
+        <div class="contact-info">
+            <a href="https://instagram.com/w_a_ale.96" target="_blank">
+                <i class="fab fa-instagram"></i> @w_a_ale.96
+            </a>
+            <a href="mailto:amayalajandra@gmail.com">
+                <i class="fas fa-envelope"></i> amayalajandra@gmail.com
+            </a>
+        </div>
+    </div>
+
     <header>
         <div class="container">
-            <h1>Sweet Brew Café</h1>
-            <p>Where every sip comes with a sweet surprise</p>
+            <h1>Delicioso Coffee</h1>
+            <p class="tagline">delicioso coffee for you</p>
         </div>
     </header>
 
@@ -20,39 +31,36 @@
         <div class="container">
             <ul>
                 <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#location">Location</a></li>
             </ul>
         </div>
     </nav>
 
     <section class="hero">
         <div class="container">
-            <h2>Artisan Coffee & Handcrafted Desserts</h2>
-            <a href="#menu" class="btn">View Our Menu</a>
+            <h2>Artisan Coffee & Handcrafted Treats</h2>
         </div>
     </section>
 
     <section id="menu" class="menu">
         <div class="container">
             <h2>Our Menu</h2>
+            
             <div class="menu-category">
                 <h3>Coffee Specialties</h3>
                 <div class="menu-items">
                     <div class="menu-item">
-                        <!-- Add coffee image 1 here -->
                         <h4>Espresso</h4>
                         <p>Rich and bold</p>
                         <span class="price">$3.50</span>
                     </div>
                     <div class="menu-item">
-                        <!-- Add coffee image 2 here -->
                         <h4>Cappuccino</h4>
                         <p>Perfectly balanced</p>
                         <span class="price">$4.50</span>
                     </div>
                     <div class="menu-item">
-                        <!-- Add coffee image 3 here -->
                         <h4>Latte</h4>
                         <p>Smooth and creamy</p>
                         <span class="price">$4.75</span>
@@ -64,21 +72,18 @@
                 <h3>Desserts</h3>
                 <div class="menu-items">
                     <div class="menu-item">
-                        <!-- Add dessert image 1 here -->
                         <h4>Chocolate Cake</h4>
                         <p>Decadent and rich</p>
                         <span class="price">$5.50</span>
                     </div>
                     <div class="menu-item">
-                        <!-- Add dessert image 2 here -->
                         <h4>Tiramisu</h4>
-                        <p>Classic Italian dessert</p>
+                        <p>Classic Italian</p>
                         <span class="price">$6.00</span>
                     </div>
                     <div class="menu-item">
-                        <!-- Add dessert image 3 here -->
                         <h4>Cheesecake</h4>
-                        <p>Creamy New York style</p>
+                        <p>New York style</p>
                         <span class="price">$5.75</span>
                     </div>
                 </div>
@@ -88,19 +93,16 @@
                 <h3>Snacks</h3>
                 <div class="menu-items">
                     <div class="menu-item">
-                        <!-- Add snack image 1 here -->
-                        <h4>Butter Croissant</h4>
-                        <p>Flaky and buttery</p>
+                        <h4>Croissant</h4>
+                        <p>Buttery and flaky</p>
                         <span class="price">$3.25</span>
                     </div>
                     <div class="menu-item">
-                        <!-- Add snack image 2 here -->
                         <h4>Blueberry Muffin</h4>
                         <p>Fresh and fruity</p>
                         <span class="price">$3.50</span>
                     </div>
                     <div class="menu-item">
-                        <!-- Add snack image 3 here -->
                         <h4>Almond Scone</h4>
                         <p>Crumbly and sweet</p>
                         <span class="price">$3.75</span>
@@ -112,37 +114,25 @@
 
     <section id="about" class="about">
         <div class="container">
-            <h2>About Sweet Brew Café</h2>
-            <p>Founded in 2023, Sweet Brew Café combines the art of coffee making with the craft of dessert creation. Our baristas and pastry chefs work together to create perfect pairings that delight all your senses.</p>
-            <p>We source our coffee beans from sustainable farms and use only the finest ingredients in our desserts and snacks.</p>
+            <h2>Our Story</h2>
+            <p>Delicioso Coffee was born from a passion for creating perfect moments. We combine premium coffee beans with homemade desserts to deliver an unforgettable experience.</p>
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="location" class="location">
         <div class="container">
             <h2>Visit Us</h2>
-            <div class="contact-info">
-                <div>
-                    <h3>Hours</h3>
-                    <p>Monday-Friday: 7am-7pm</p>
-                    <p>Saturday-Sunday: 8am-6pm</p>
-                </div>
-                <div>
-                    <h3>Contact</h3>
-                    <p><i class="fas fa-envelope"></i> amayalajandra@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
-                </div>
-                <div class="social">
-                    <h3>Follow Us</h3>
-                    <a href="https://instagram.com/w_a_ale.96" target="_blank"><i class="fab fa-instagram"></i> @w_a_ale.96</a>
-                </div>
+            <div class="hours">
+                <h3>Opening Hours</h3>
+                <p>Monday-Friday: 7am-7pm</p>
+                <p>Saturday-Sunday: 8am-6pm</p>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Sweet Brew Café. All rights reserved.</p>
+            <p>&copy; 2023 Delicioso Coffee. All rights reserved.</p>
         </div>
     </footer>
 </body>
