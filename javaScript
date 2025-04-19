@@ -1,9 +1,35 @@
-// Smooth scrolling for navigation links
+// Mobile navigation toggle
+document.querySelector('.hamburger').addEventListener('click', function() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+});
+
+// Smooth scrolling for all links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+    anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        window.scrollTo({
+            top: targetElement.offsetTop - 80,
             behavior: 'smooth'
         });
+        
+        // Close mobile menu if open
+        if (window.innerWidth <= 768) {
+            document.querySelector('.nav-links').style.display = 'none';
+        }
     });
+});
+
+// Sticky navigation on scroll
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 100) {
+        navbar.style.backgroundColor = 'rgba(111, 78, 55, 0.95)';
+    } else {
+        navbar.style.backgroundColor = 'var(--primary)';
+    }
 });
